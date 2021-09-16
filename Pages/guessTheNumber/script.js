@@ -31,7 +31,8 @@ document.querySelector(".check").addEventListener("click", function () {
   } else if (guess !== secretNumber) {
     document.querySelector(".Guess").textContent =
       guess > secretNumber ? "To high..." : "To Low...";
-    decreaseTheScoreValue(score);
+    score--;
+    document.querySelector(".Score").textContent = "score:" + score;
   }
 });
 
@@ -60,11 +61,6 @@ const changeMessageValue = function (message) {
 
 const setHighScoreValue = function (highScoreValue) {
   document.querySelector(".HighScore").textContent = highScoreValue;
-};
-
-const decreaseTheScoreValue = function (score) {
-  score--;
-  document.querySelector(".Score").textContent = "score:" + score;
 };
 
 const showHiddenNumber = function (numberValue) {
