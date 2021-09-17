@@ -1,4 +1,4 @@
-"strict";
+"use strict";
 //Generte a random number from 1 to 20
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 
