@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bankist app</title>
+    <link href="design.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div>
+      <h3>Greetings, Gaurav</h3>
+      <form id='signinform'>
+        <input type="text" placeholder="Username" class="username"/>
+        <input type="password" placeholder="password" class="password"/>
+        <button type="button" />SignIn</button>
+      </form>
+    </div>
+    <div id="currentBlnc">
+        <h3 class="currentBlnc">Current balance</h3>
+        <p class="currentDate">Date: 02/20/2002</p>
+        <h3 class="currentMoney">0$</h3>
+    </div>
+    <div id="centerContent">
+        <div id="contentTable">
+            <table>
+                <thead>
+                    <th>TransactionType</th>
+                    <th>Date</th>
+                    <th>Ammount</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td  data-content="Deposite" >Deposite</td>
+                        <td>23/20/2002</td>
+                        <td>30$</td>
+                    </tr>
+                    <tr>
+                        <td  data-content="Deposite" >Deposite</td>
+                        <td>23/20/2002</td>
+                        <td>30$</td>
+                    </tr>
+                    <tr>
+                        <td  data-content="Deposite" >Deposite</td>
+                        <td>23/20/2002</td>
+                        <td>30$</td>
+                    </tr>
+                    <tr>
+                        <td  data-content="Deposite" >Deposite</td>
+                        <td>23/20/2002</td>
+                        <td>30$</td>
+                    </tr>
+                    <tr>
+                        <td  data-content="Deposite" >Deposite</td>
+                        <td>23/20/2002</td>
+                        <td>30$</td>
+                    </tr>
+                    <tr>
+                        <td  data-content="Deposite" >Deposite</td>
+                        <td>23/20/2002</td>
+                        <td>30$</td>
+                    </tr>
+                    <tr>
+                        <td  data-content="Deposite" >Deposite</td>
+                        <td>23/20/2002</td>
+                        <td>30$</td>
+                    </tr>
+                    <tr>
+                        <td  data-content="Debit" >Debit</td>
+                        <td>23/20/2002</td>
+                        <td>30$</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="trnasactionsSections">
+            <div id="trfr">
+                <h3>Transfer money<h3>
+                <input type="text" placeholder="Transfer To">
+                <input type="text" placeholder="Ammount">
+                <button>Send</button>
+            </div>
+            <div id="loan">
+                <h3>Loan request<h3></h3>
+                <input type="text" placeholder="Ammount">
+                <button>Send</button>
+            </div>
+            <div id="cls">
+                <h3>CloseAccount<h3>
+                    <input type="text" placeholder="Confirm user">
+                    <input type="password" placeholder="Confirm Pin">
+                    <button>Close</button>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,89 @@
+body {
+  background-color: #f7f7f7;
+}
+
+.username {
+  border-radius: 5px;
+  max-width: 5rem;
+}
+
+.password {
+  border-radius: 5px;
+  max-width: 5rem;
+}
+#signinform {
+  position: absolute;
+  top: 0.9rem;
+  right: 1rem;
+}
+
+#trfr {
+  background-image: linear-gradient(red, white);
+  border-radius: 15px;
+  margin: 1rem 1rem 1rem 1rem;
+  max-width: 30rem;
+  padding: 1rem;
+}
+
+#loan {
+  background-image: linear-gradient(blue, white);
+  border-radius: 15px;
+  max-width: 30rem;
+  padding: 1rem;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+#cls {
+  background-image: linear-gradient(green, white);
+  border-radius: 15px;
+  max-width: 30rem;
+  padding: 1rem;
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+#contentTable {
+  position: relative;
+  left: 20rem;
+  top: 1rem;
+  max-width: fit-content;
+}
+#trnasactionsSections {
+  position: relative;
+  left: 25rem;
+  float: left;
+}
+
+#centerContent {
+  display: flex;
+}
+
+table {
+  background-color: white;
+  border-radius: 5px;
+}
+
+td,
+th {
+  border-bottom: 5px solid yellow;
+  border-radius: 2px;
+  text-align: center;
+}
+
+#currentBlnc {
+  text-align: center;
+}
+
+input {
+  border-radius: 5px;
+}
+
+td[data-content="Deposite"] {
+  background-color: greenyellow;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+td[data-content="Debit"] {
+  background-color: red;
+  border-radius: 15px;
+}
