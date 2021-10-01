@@ -2,93 +2,79 @@
 <html>
   <head>
     <title>Bankist app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href="design.css" rel="stylesheet" />
   </head>
   <body>
-    <div>
-      <h3>Greetings, Gaurav</h3>
-      <form id='signinform'>
-        <input type="text" placeholder="Username" class="username"/>
-        <input type="password" placeholder="password" class="password"/>
-        <button type="button" />SignIn</button>
+    <nav  class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">  
+        <a class="navbar-brand">Greeting, Gaurav</a>
+      <form  class="d-flex" id='signinform'>
+        <input type="text" placeholder="Username" class="username form-control me-2"/>
+        <input type="password" placeholder="password" class="password form-control me-2"/>
+        <button type="button"  class="btn btn-outline-success" type="submit">SignIn</button>
       </form>
-    </div>
+      </div>
+    </nav>
     <div id="currentBlnc">
         <h3 class="currentBlnc">Current balance</h3>
         <p class="currentDate">Date: 02/20/2002</p>
         <h3 class="currentMoney">0$</h3>
     </div>
-    <div id="centerContent">
-        <div id="contentTable">
-            <table>
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table">
                 <thead>
-                    <th>TransactionType</th>
-                    <th>Date</th>
-                    <th>Ammount</th>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Transaction Type</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Ammount</th>
+                  </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td  data-content="Deposite" >Deposite</td>
-                        <td>23/20/2002</td>
-                        <td>30$</td>
-                    </tr>
-                    <tr>
-                        <td  data-content="Deposite" >Deposite</td>
-                        <td>23/20/2002</td>
-                        <td>30$</td>
-                    </tr>
-                    <tr>
-                        <td  data-content="Deposite" >Deposite</td>
-                        <td>23/20/2002</td>
-                        <td>30$</td>
-                    </tr>
-                    <tr>
-                        <td  data-content="Deposite" >Deposite</td>
-                        <td>23/20/2002</td>
-                        <td>30$</td>
-                    </tr>
-                    <tr>
-                        <td  data-content="Deposite" >Deposite</td>
-                        <td>23/20/2002</td>
-                        <td>30$</td>
-                    </tr>
-                    <tr>
-                        <td  data-content="Deposite" >Deposite</td>
-                        <td>23/20/2002</td>
-                        <td>30$</td>
-                    </tr>
-                    <tr>
-                        <td  data-content="Deposite" >Deposite</td>
-                        <td>23/20/2002</td>
-                        <td>30$</td>
-                    </tr>
-                    <tr>
-                        <td  data-content="Debit" >Debit</td>
-                        <td>23/20/2002</td>
-                        <td>30$</td>
-                    </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Debit</td>
+                    <td>01/2/2992</td>
+                    <td>5$</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Debit</td>
+                    <td>01/2/2992</td>
+                    <td>5$</td>
+                  </tr>
                 </tbody>
-            </table>
+              </table>
         </div>
-        <div id="trnasactionsSections">
+        <div  class="col-md-6">
             <div id="trfr">
                 <h3>Transfer money<h3>
-                <input type="text" placeholder="Transfer To">
-                <input type="text" placeholder="Ammount">
-                <button>Send</button>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Transfer To" aria-label="Transfer To">
+                        <input type="text" class="form-control" placeholder="Ammount" aria-label="Ammount">
+                        <button type="button" class="btn btn-success">Send</button>
+                    </div>              
             </div>
             <div id="loan">
                 <h3>Loan request<h3></h3>
-                <input type="text" placeholder="Ammount">
-                <button>Send</button>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Ammount" aria-label="Ammount">
+                    <button type="button" class="btn btn-success">Send</button>
+                </div>         
             </div>
             <div id="cls">
                 <h3>CloseAccount<h3>
-                    <input type="text" placeholder="Confirm user">
-                    <input type="password" placeholder="Confirm Pin">
-                    <button>Close</button>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Confirm user" aria-label="Confirm user">
+                        <input type="password" class="form-control" placeholder="Confirm Pin" aria-label="Confirm Pin">
+                        <button type="button" class="btn btn-warning">Send</button>
+                    </div>  
             </div>
         </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>

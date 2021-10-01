@@ -2,21 +2,6 @@ body {
   background-color: #f7f7f7;
 }
 
-.username {
-  border-radius: 5px;
-  max-width: 5rem;
-}
-
-.password {
-  border-radius: 5px;
-  max-width: 5rem;
-}
-#signinform {
-  position: absolute;
-  top: 0.9rem;
-  right: 1rem;
-}
-
 #trfr {
   background-image: linear-gradient(red, white);
   border-radius: 15px;
@@ -55,18 +40,7 @@ body {
 
 #centerContent {
   display: flex;
-}
-
-table {
-  background-color: white;
-  border-radius: 5px;
-}
-
-td,
-th {
-  border-bottom: 5px solid yellow;
-  border-radius: 2px;
-  text-align: center;
+  opacity: 1;
 }
 
 #currentBlnc {
